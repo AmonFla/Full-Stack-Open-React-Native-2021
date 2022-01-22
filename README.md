@@ -5,10 +5,10 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Expo Limitations](https://docs.expo.dev/introduction/why-not-expo/)
 * [Metro](https://facebook.github.io/metro/)
 * [React Native Debugger](https://docs.expo.dev/workflow/debugging/#react-native-debugger)
-* []()
-* []()
-* []()
-* []()
+* [React Native Styling Chear Sheet](https://github.com/vhpoet/react-native-styling-cheat-sheet)
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+* [Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Flexbox en ReactNative](https://reactnative.dev/docs/flexbox)
 * []()
 
 ## Componentes

@@ -1,23 +1,25 @@
-import React from "react";
-import Constants from 'expo-constants';
-import { Text, StyleSheet, View } from "react-native";
-import RepositoryList from "./Components/RepositoryList";
+import React from "react"; 
+import {  StyleSheet, View } from "react-native";
+import RepositoryList from "./Components/RepositoryList"; 
+import AppBar from "./Components/AppBar"; 
 
 const style  = StyleSheet.create({
-    container:{
-        marginTop: Constants.statusBarHeight,
-        flexGrow:1,
-        flexShrink:1,
-    }
+  container:{ 
+    flexDirection: "column"
+  }
 });
 
 const Main =()=>{
-    return (
-        <View style={style.container}>
-            <Text>Rate Repository Application test{"\n"}</Text>
-            <RepositoryList /> 
-        </View>
-    );
+  return (
+    <View style={style.container}> 
+      <View >
+        <AppBar />
+      </View>
+      <View>
+        <RepositoryList /> 
+      </View>
+    </View>
+  );
 };
 
 export default Main;
