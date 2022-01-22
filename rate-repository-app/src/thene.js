@@ -4,7 +4,8 @@ const theme = {
     textSecondary: '#586069',
     primary: '#0366d6',
     blackBkg: '#24292e',
-    fontWhite: '#ffffff',
+    white: '#ffffff',
+    lightGray: '#d3d3d3'
 
   },
   fontSizes:{
