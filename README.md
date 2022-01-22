@@ -9,14 +9,15 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 * [Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Flexbox en ReactNative](https://reactnative.dev/docs/flexbox)
-* []()
+* []()* []()* []()
 
 ## Componentes
 * [Componentes Principales y Componentes Native](https://reactnative.dev/docs/intro-react-native-components)
 * [Componentes Principales y APIS](https://reactnative.dev/docs/components-and-apis)
 * [Componentes tocables](https://reactnative.dev/docs/handling-touches#touchables)
 * [FlatList](https://reactnative.dev/docs/flatlist)
-* []()
+* [ReactNativeRouter](https://v5.reactrouter.com/native/guides/quick-start)
+* []()* []()
 
 ## Emuladores
 * [Android](https://docs.expo.io/versions/v37.0.0/workflow/android-studio-emulator/)

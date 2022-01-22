@@ -6,7 +6,8 @@ import theme from "../thene";
 const styles = StyleSheet.create({ 
   title:{
     color: theme.colors.white,
-    fontSize: theme.fontSizes.heading
+    fontSize: theme.fontSizes.heading,
+    marginRight: 10
   }
   // ...
 });
