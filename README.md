@@ -17,7 +17,8 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Componentes tocables](https://reactnative.dev/docs/handling-touches#touchables)
 * [FlatList](https://reactnative.dev/docs/flatlist)
 * [ReactNativeRouter](https://v5.reactrouter.com/native/guides/quick-start)
-* []()* []()
+* [ScrollView](https://reactnative.dev/docs/scrollview)
+* []()* []()* []()* []()* []()* []()
 
 ## Emuladores
 * [Android](https://docs.expo.io/versions/v37.0.0/workflow/android-studio-emulator/)
