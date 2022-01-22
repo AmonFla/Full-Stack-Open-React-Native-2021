@@ -9,7 +9,9 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 * [Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Flexbox en ReactNative](https://reactnative.dev/docs/flexbox)
-* []()* []()* []()
+* [YUP validation library](https://github.com/jquense/yup)
+* []()
+* []()
 
 ## Componentes
 * [Componentes Principales y Componentes Native](https://reactnative.dev/docs/intro-react-native-components)
@@ -18,11 +20,17 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [FlatList](https://reactnative.dev/docs/flatlist)
 * [ReactNativeRouter](https://v5.reactrouter.com/native/guides/quick-start)
 * [ScrollView](https://reactnative.dev/docs/scrollview)
-* []()* []()* []()* []()* []()* []()
+* [Formik](https://formik.org/)
+* []()
+* []()
+* []()
+* []()
+* []()
 
 ## Emuladores
 * [Android](https://docs.expo.io/versions/v37.0.0/workflow/android-studio-emulator/)
 * [Mac](https://docs.expo.io/versions/v37.0.0/workflow/ios-simulator/)
+* [Expor Snack](https://snack.expo.io)
 
 ## React Native Debugger
 
