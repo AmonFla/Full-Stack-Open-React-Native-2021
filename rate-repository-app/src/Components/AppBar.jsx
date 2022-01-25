@@ -3,8 +3,10 @@ import { View , StyleSheet, TouchableWithoutFeedback, ScrollView} from "react-na
 import Constants from 'expo-constants'; 
 import theme from "../thene";
 import AppBarItem from "./AppBarItem"; 
-import { Link } from "react-router-native";
+import { Link } from "react-router-native"; 
+import useMe
 
+  from "../hooks/useMe";
 const styles = StyleSheet.create({
   container:{
     paddingTop: Constants.statusBarHeight * 2,
@@ -18,6 +20,8 @@ const styles = StyleSheet.create({
 });
 
 const AppBar = ()=>{
+  const {me} = useMe();
+  console.log(me);
   return (
     <View style={styles.container}>
       <ScrollView horizontal>
@@ -28,7 +32,10 @@ const AppBar = ()=>{
         </TouchableWithoutFeedback> 
         <TouchableWithoutFeedback >
           <View>
-            <Link to="/signin"><AppBarItem title="Sign In" /></Link>
+            {me? 
+              <Link to="/signout"><AppBarItem title="Sign Out" /></Link> 
+              :<Link to="/signin"><AppBarItem title="Sign In" /></Link>
+            }
           </View>
         </TouchableWithoutFeedback> 
       </ScrollView>

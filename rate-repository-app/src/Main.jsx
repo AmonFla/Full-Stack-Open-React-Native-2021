@@ -5,6 +5,7 @@ import theme from "./thene";
 import SignIn from "./Components/SignIn";
 import RepositoryList from "./Components/RepositoryList"; 
 import AppBar from "./Components/AppBar"; 
+import SignOut from "./Components/SignOut";
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +22,7 @@ const Main = () => {
       <Routes>     
         <Route path="/" element={<RepositoryList />} exact />  
         <Route path="/signin" element={<SignIn />} exact />   
+        <Route path="/signout" element={<SignOut />} exact />   
         <Route path="*" element={<Navigate to="/" replace />} />  
       </Routes>   
     </View>
