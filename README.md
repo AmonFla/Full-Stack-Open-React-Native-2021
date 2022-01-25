@@ -10,7 +10,7 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Flexbox en ReactNative](https://reactnative.dev/docs/flexbox)
 * [YUP validation library](https://github.com/jquense/yup)
-* []()
+* [How to use react context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
 * []()
 
 ## Componentes

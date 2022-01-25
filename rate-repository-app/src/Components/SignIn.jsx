@@ -1,13 +1,14 @@
 import React from "react"; 
 import { Formik } from "formik";
-import { Pressable, View , StyleSheet} from "react-native";
+import { Pressable, View , StyleSheet} from "react-native"; 
+import {  useNavigate } from "react-router-native";
+
 import * as yup from 'yup';  
 
 import FormikTextInput from "./New/FormikTextInput";
 import Text from "./New/Text";
 import theme from "../thene"; 
-import useSignIn from "../hooks/useSignIn";
-import AuthStorage from "../utils/authStorage";
+import useSignIn from "../hooks/useSignIn"; 
 
 
 const styles = StyleSheet.create({
@@ -78,16 +79,16 @@ const SignInForm = ({onSubmit}) =>{
 };
 
 const SignIn = () => { 
-  const [signIn] = useSignIn();
-  const storage = new AuthStorage();
+  const [signIn] = useSignIn();  
+  const navigateTo = useNavigate();
  
 
   const onSubmit = async (values) => {
     const { username, password } = values;
 
-    try {
-      const { data } = await signIn({ username, password }); 
-      storage.setAccessToken(data.authenticate.accessToken);
+    try { 
+      await signIn({ username, password });
+      navigateTo('/');   
     } catch (e) {
       console.log(e);
     }
