@@ -12,3 +12,11 @@ mutation Authenticate($credentials: AuthenticateInput) {
   }
 `;
 
+export const REVIEW_ADD = gql`
+mutation CreateReview($review: CreateReviewInput) {
+  createReview(review: $review) {
+    repositoryId
+  }
+}
+`;
+

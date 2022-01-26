@@ -13,7 +13,8 @@ import ItemSeparator from "../Extra/ItemSeparator";
 
 const RepositoryView =  ()=>{
   const {id} = useParams();
-  const [getRepository, result] = useLazyQuery(GET_REPOSITORY); 
+  const [getRepository, result] = useLazyQuery(GET_REPOSITORY, {
+    fetchPolicy: 'cache-and-network'}); 
   const [item, setItem] = useState(null);
 
   useEffect(()=>{ 

@@ -29,9 +29,16 @@ const AppBar = ()=>{
             <Link to="/" ><AppBarItem title="Repositories" /></Link>
           </View>
         </TouchableWithoutFeedback> 
+        {me? 
+          <TouchableWithoutFeedback>
+            <View>
+              <Link to="/reviewadd" ><AppBarItem title="Create a review" /></Link>
+            </View>
+          </TouchableWithoutFeedback>
+          :null}
         <TouchableWithoutFeedback >
           <View>
-            {me? 
+            {me?  
               <Link to="/signout"><AppBarItem title="Sign Out" /></Link> 
               :<Link to="/signin"><AppBarItem title="Sign In" /></Link>
             }

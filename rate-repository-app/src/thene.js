@@ -8,7 +8,8 @@ const theme = {
     blackBkg: '#24292e',
     white: '#ffffff',
     lightGray: '#d3d3d3',
-    errorRed: '#d73a4a'
+    errorRed: '#d73a4a',
+    yellow: '#ffefba'
 
   },
   fontSizes:{
