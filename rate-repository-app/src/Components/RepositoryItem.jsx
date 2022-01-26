@@ -43,12 +43,10 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,  
   }
-
-  // ...
 }); 
 const RepositoryItem = ({item}) => { 
   return(
-    <View style={styles.container}>
+    <View style={styles.container} testID="repositoryItem">
       <View style={styles.padding}>
         <View style={styles.flexBoxRow}>
           <Image

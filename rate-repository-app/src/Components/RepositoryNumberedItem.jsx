@@ -6,14 +6,13 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center"
   }
-
-  // ...
+ 
 });
 
 const RepositoryNumberedItems = ({number, title})=>{
   const value = number > 1000 ? Number((number / 1000).toFixed(1)) + 'k': number;
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID={title}>
       <Text  
         fontWeight="bold" 
         fontSize="subheading" >

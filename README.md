@@ -20,12 +20,18 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [FlatList](https://reactnative.dev/docs/flatlist)
 * [ReactNativeRouter](https://v5.reactrouter.com/native/guides/quick-start)
 * [ScrollView](https://reactnative.dev/docs/scrollview)
-* [Formik](https://formik.org/)
-* []()
-* []()
-* []()
-* []()
-* []()
+* [Formik](https://formik.org/) 
+
+## Testing Jest
+* [Testing with jest](https://docs.expo.io/guides/testing-with-jest/) 
+* [React Native Testing Library](https://callstack.github.io/react-native-testing-library/) 
+* [how to query different kinds of elements](https://callstack.github.io/react-native-testing-library/docs/how-should-i-query/)
+* [Making your UI tests resilient to change](https://kentcdodds.com/blog/making-your-ui-tests-resilient-to-change)
+* [Expect](https://jestjs.io/docs/expect)
+* [Mock Functions](https://jestjs.io/docs/mock-function-api)
+* [Querying Within Elements](https://testing-library.com/docs/dom-testing-library/api-within/)
+* [tohavetextcontent](https://github.com/testing-library/jest-native#tohavetextcontent)
+* []()* []()* []()
 
 ## Emuladores
 * [Android](https://docs.expo.io/versions/v37.0.0/workflow/android-studio-emulator/)
