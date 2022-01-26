@@ -4,6 +4,7 @@ import { StyleSheet, Image, View, Pressable, Linking} from "react-native";
 import Text from "./New/Text";
 import theme from "../thene";
 import RepositoryNumberedItems from "./RepositoryNumberedItem"; 
+import ItemSeparator from "./ItemSeparator";
 
 const styles = StyleSheet.create({
   container:{
@@ -113,16 +114,20 @@ const RepositoryItem = ({item, viewLink}) => {
         </View>
       </Link>
       {viewLink ?
-        <View style={[styles.padding]}>
-          <Pressable onPress={()=>openGitHub()}>
-            <View style={[styles.box, styles.buttonBox]}>
-              <Text   
-                style={styles.buttonText}
-                fontWeight="bold" 
-                fontSize="subheading"  >Open In Github</Text>  
-            </View> 
-          </Pressable>
-        </View> 
+        <View>
+          <View style={[styles.padding]}>
+            <Pressable onPress={()=>openGitHub()}>
+              <View style={[styles.box, styles.buttonBox]}>
+                <Text   
+                  style={styles.buttonText}
+                  fontWeight="bold" 
+                  fontSize="subheading"  >Open In Github</Text>  
+              </View> 
+            </Pressable>
+          </View> 
+
+          <ItemSeparator />
+        </View>
         :null}
     </View>
 

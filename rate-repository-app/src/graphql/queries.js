@@ -24,16 +24,30 @@ export const GET_REPOSITORY = gql`
 query getRepository($repositoryId: ID!) {
   repository(id: $repositoryId) {
     
-              id
-              ownerAvatarUrl
-              fullName
-              description
-              language
-              stargazersCount
-              forksCount
-              reviewCount
-              ratingAverage
+    id
+    ownerAvatarUrl
+    fullName
+    description
+    language
+    stargazersCount
+    forksCount
+    reviewCount
+    ratingAverage
     url
+    reviews {
+      edges {
+        node {
+          id
+          text
+          rating
+          createdAt
+          user {
+            id
+            username
+          }
+        }
+      }
+    }
   }
 }
 `;

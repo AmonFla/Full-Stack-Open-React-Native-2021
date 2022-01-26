@@ -1,18 +1,8 @@
 import React from "react";
-import { FlatList , StyleSheet , View} from "react-native";
-
-import theme from "../thene"; 
+import { FlatList  , View} from "react-native"; 
 import RepositoryItem from "./RepositoryItem";
-
-const styles = StyleSheet.create({
-  separator:{
-    height:16,
-    backgroundColor: theme.colors.lightGray
-  }
-});
+import ItemSeparator from "./ItemSeparator";
  
-
-const ItemSeparator = ()=> <View style={styles.separator} />; 
 
 const RepositoryListContainer = ({repositories})=>{ 
 
