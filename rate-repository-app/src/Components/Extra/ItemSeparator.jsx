@@ -1,7 +1,8 @@
 
 import React  from "react";  
 import {   StyleSheet, View} from "react-native";
-import theme from "../thene"; 
+
+import theme from "../../thene"; 
 
 
 

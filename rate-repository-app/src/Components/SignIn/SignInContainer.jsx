@@ -1,12 +1,11 @@
 import React from "react"; 
 import { Formik } from "formik";
 import { Pressable, View , StyleSheet} from "react-native";  
-
 import * as yup from 'yup';  
 
-import FormikTextInput from "./New/FormikTextInput";
-import Text from "./New/Text";
-import theme from "../thene";  
+import FormikTextInput from '../Extra/FormikTextInput';
+import Text from "../Extra/Text";
+import theme from "../../thene";  
 
 
 const styles = StyleSheet.create({

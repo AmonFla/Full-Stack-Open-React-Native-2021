@@ -1,7 +1,8 @@
 import React from "react";
 import { FlatList  , View} from "react-native"; 
+
 import RepositoryItem from "./RepositoryItem";
-import ItemSeparator from "./ItemSeparator";
+import ItemSeparator from "../Extra/ItemSeparator";
  
 
 const RepositoryListContainer = ({repositories})=>{ 

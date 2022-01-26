@@ -3,10 +3,10 @@ import React,{useEffect, useState} from "react";
 import { FlatList,  } from "react-native";
 import { useParams } from "react-router-native";
 
-import { GET_REPOSITORY } from "../graphql/queries";
-import RepositoryItem from "./RepositoryItem";
-import ItemSeparator from "./ItemSeparator";
+import { GET_REPOSITORY } from "../../graphql/queries"; 
 import ReviewItem from "./ReviewItem";
+import RepositoryItem from "../RepositoryList/RepositoryItem";
+import ItemSeparator from "../Extra/ItemSeparator";
 
 
 

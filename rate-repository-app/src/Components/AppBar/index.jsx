@@ -1,12 +1,12 @@
 import React from "react";
 import { View , StyleSheet, TouchableWithoutFeedback, ScrollView} from "react-native";
 import Constants from 'expo-constants'; 
-import theme from "../thene";
-import AppBarItem from "./AppBarItem"; 
 import { Link } from "react-router-native"; 
-import useMe
 
-  from "../hooks/useMe";
+import theme from "../../thene";
+import AppBarItem from "./AppBarItem"; 
+import useMe  from "../../hooks/useMe";
+
 const styles = StyleSheet.create({
   container:{
     paddingTop: Constants.statusBarHeight * 2,

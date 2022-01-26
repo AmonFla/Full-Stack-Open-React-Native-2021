@@ -1,10 +1,11 @@
 import React from "react";
 import {  Link } from "react-router-native"; 
 import { StyleSheet, Image, View, Pressable, Linking} from "react-native";
-import Text from "./New/Text";
-import theme from "../thene";
+
+import Text from "../Extra/Text";
+import theme from "../../thene";
 import RepositoryNumberedItems from "./RepositoryNumberedItem"; 
-import ItemSeparator from "./ItemSeparator";
+import ItemSeparator from "../Extra/ItemSeparator";
 
 const styles = StyleSheet.create({
   container:{

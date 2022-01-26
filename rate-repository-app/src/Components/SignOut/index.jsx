@@ -1,7 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import AuthStorageContext from "../context/AuthStorageContext";
 import {  useNavigate } from "react-router-native";
 import { useApolloClient } from "@apollo/client";
+
+
+import AuthStorageContext from "../../context/AuthStorageContext";
 
 const SignOut = ()=>{
   const authStorage = useContext(AuthStorageContext);

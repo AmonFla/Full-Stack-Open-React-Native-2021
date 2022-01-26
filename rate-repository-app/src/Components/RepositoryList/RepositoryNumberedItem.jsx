@@ -1,6 +1,8 @@
 import React from "react";
 import { StyleSheet,  View} from "react-native";
-import Text from "./New/Text"; 
+
+import Text from "../Extra/Text"; 
+
 const styles = StyleSheet.create({
   container:{
     flexDirection: "column",

@@ -1,7 +1,8 @@
 import React from "react";
 import { View , StyleSheet} from "react-native";
-import Text from "./New/Text";
-import theme from "../thene";
+
+import Text from "../Extra/Text";
+import theme from "../../thene";
 
 const styles = StyleSheet.create({ 
   title:{
