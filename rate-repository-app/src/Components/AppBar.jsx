@@ -20,8 +20,7 @@ const styles = StyleSheet.create({
 });
 
 const AppBar = ()=>{
-  const {me} = useMe();
-  console.log(me);
+  const {me} = useMe(); 
   return (
     <View style={styles.container}>
       <ScrollView horizontal>

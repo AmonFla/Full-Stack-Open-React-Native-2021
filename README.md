@@ -31,7 +31,8 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Mock Functions](https://jestjs.io/docs/mock-function-api)
 * [Querying Within Elements](https://testing-library.com/docs/dom-testing-library/api-within/)
 * [tohavetextcontent](https://github.com/testing-library/jest-native#tohavetextcontent)
-* []()* []()* []()
+* [waitFor](https://callstack.github.io/react-native-testing-library/docs/api/#waitfor)
+* []()* []()
 
 ## Emuladores
 * [Android](https://docs.expo.io/versions/v37.0.0/workflow/android-studio-emulator/)
