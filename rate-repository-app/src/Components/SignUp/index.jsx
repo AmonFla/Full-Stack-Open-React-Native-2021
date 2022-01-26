@@ -2,23 +2,26 @@ import React, {useState} from "react";
 import {  View } from "react-native";  
 import {  useNavigate } from "react-router-native";
 
-import useReviewAdd from "../../hooks/useReviewAdd";
+import useUserAdd from "../../hooks/useUserAdd";
 import Message from "../Extra/Message";
-import ReviewAddContainer from "./ReviewAddContainer";
+import UserAddContainer from "./UserAddContainer";
+import useSignIn from "../../hooks/useSignIn";
 
 
 
-const ReviewAdd = () => {  
-  const [reviewAdd] = useReviewAdd();
+const SignUp = () => {  
+  const [userAdd] = useUserAdd();
+  const [signIn] = useSignIn();
   const [errorMessage, setErrorMessage] = useState(null);
   const navigateTo = useNavigate();
  
 
   const onSubmit = async (values) => {
-    const { repositoryName, ownerName, rating, text } = values;
+    const { username, password } = values;
     try { 
-      const {createReview} = await reviewAdd({ repositoryName, ownerName, rating, text }); 
-      navigateTo(`/viewrepo/${createReview.repositoryId}`);
+      await userAdd({ username, password}); 
+      await signIn({ username, password });
+      navigateTo('/');  
     } catch (e) {
       setErrorMessage(e.message);
     }
@@ -31,10 +34,10 @@ const ReviewAdd = () => {
         <Message message={errorMessage} backGround="danger"/>
         : null
       }
-      <ReviewAddContainer onSubmit={onSubmit} />
+      <UserAddContainer onSubmit={onSubmit} />
     </View>
   );
 };
  
 
-export default ReviewAdd; 
+export default SignUp; 

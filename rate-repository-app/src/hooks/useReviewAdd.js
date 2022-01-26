@@ -7,9 +7,9 @@ const useReviewAdd = () => {
   const [add, result] = useMutation(REVIEW_ADD); 
   const apolloClient = useApolloClient();
   
-  const reviewAdd = async ({ repositoryName, ownerName, rating, test }) => { 
+  const reviewAdd = async ({ repositoryName, ownerName, rating, text }) => { 
 
-    const {data} = await add({variables:{ review:{repositoryName, ownerName, rating: Number(rating), test}}});  
+    const {data} = await add({variables:{ review:{repositoryName, ownerName, rating: Number(rating), text}}});  
     apolloClient.resetStore();
     return {createReview: data && data.createReview  };
     

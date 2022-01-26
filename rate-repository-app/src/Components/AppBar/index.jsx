@@ -1,7 +1,6 @@
 import React from "react";
-import { View , StyleSheet, TouchableWithoutFeedback, ScrollView} from "react-native";
-import Constants from 'expo-constants'; 
-import { Link } from "react-router-native"; 
+import { View , StyleSheet, ScrollView} from "react-native";
+import Constants from 'expo-constants';  
 
 import theme from "../../thene";
 import AppBarItem from "./AppBarItem"; 
@@ -24,26 +23,17 @@ const AppBar = ()=>{
   return (
     <View style={styles.container}>
       <ScrollView horizontal>
-        <TouchableWithoutFeedback>
-          <View>
-            <Link to="/" ><AppBarItem title="Repositories" /></Link>
-          </View>
-        </TouchableWithoutFeedback> 
+        <AppBarItem title="Repositories" link="/" />
         {me? 
-          <TouchableWithoutFeedback>
-            <View>
-              <Link to="/reviewadd" ><AppBarItem title="Create a review" /></Link>
-            </View>
-          </TouchableWithoutFeedback>
-          :null}
-        <TouchableWithoutFeedback >
-          <View>
-            {me?  
-              <Link to="/signout"><AppBarItem title="Sign Out" /></Link> 
-              :<Link to="/signin"><AppBarItem title="Sign In" /></Link>
-            }
-          </View>
-        </TouchableWithoutFeedback> 
+          <>
+            <AppBarItem title="Create a review" link="/reviewadd" />
+            <AppBarItem title="Sign Out" link="/signout" />
+          </> 
+          :<>
+            <AppBarItem title="Sign In" link="/signin" /> 
+            <AppBarItem title="Sign Up" link="/signup" /> 
+          </>
+        } 
       </ScrollView>
     </View>);
 };

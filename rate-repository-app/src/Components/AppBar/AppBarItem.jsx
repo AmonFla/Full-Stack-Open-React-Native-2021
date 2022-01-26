@@ -1,5 +1,6 @@
 import React from "react";
-import { View , StyleSheet} from "react-native";
+import { View , StyleSheet,TouchableWithoutFeedback} from "react-native";
+import { Link } from "react-router-native"; 
 
 import Text from "../Extra/Text";
 import theme from "../../thene";
@@ -13,8 +14,14 @@ const styles = StyleSheet.create({
   // ...
 });
 
-const AppBarItem = ({title})=>{
-  return <View><Text style={styles.title}>{title}</Text></View>;
+const AppBarItem = ({title, link})=>{
+  return (
+    <TouchableWithoutFeedback>
+      <View>
+        <Link to={link} ><View><Text style={styles.title}>{title}</Text></View></Link>
+      </View>
+    </TouchableWithoutFeedback> 
+  );
 };
 
 export default AppBarItem;
