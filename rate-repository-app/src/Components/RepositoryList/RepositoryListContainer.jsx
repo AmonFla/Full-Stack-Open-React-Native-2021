@@ -3,9 +3,10 @@ import { FlatList  , View} from "react-native";
 
 import RepositoryItem from "./RepositoryItem";
 import ItemSeparator from "../Extra/ItemSeparator";
+import MenuOptions from "./MenuOptions";
  
 
-const RepositoryListContainer = ({repositories})=>{ 
+const RepositoryListContainer = ({repositories,setOption, option})=>{ 
 
   // Get the nodes from the edges array
   const repositoryNodes = repositories
@@ -14,12 +15,15 @@ const RepositoryListContainer = ({repositories})=>{
   
   return (
     <View> 
-      <FlatList
-        data={repositoryNodes}
-        ItemSeparatorComponent={ItemSeparator}
-        renderItem={RepositoryItem}
-        keyExtractor={(item)=>item.id}
-      /> 
+      <View>
+        <FlatList
+          data={repositoryNodes}
+          ItemSeparatorComponent={ItemSeparator}
+          renderItem={RepositoryItem}
+          keyExtractor={(item)=>item.id}
+          ListHeaderComponent={() => <MenuOptions setOption={setOption} option={option} />}
+        /> 
+      </View>
     </View>
   );
 };
