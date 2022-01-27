@@ -26,12 +26,16 @@ export class RepositoryListContainer extends React.Component {
       : [];
       
     return ( 
-      <FlatList
+      <FlatList 
         data={repositoryNodes}
         ItemSeparatorComponent={ItemSeparator}
+        ListFooterComponent={ItemSeparator}
+        contentContainerStyle={{paddingBottom: 150}}
         renderItem={RepositoryItem}
         keyExtractor={(item)=>item.id}
         ListHeaderComponent={this.renderHeader}
+        onEndReached={this.props.onEachReach}
+        onEndReachedThreshold={0.5}
        
       />  
     );

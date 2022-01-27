@@ -12,56 +12,19 @@ const styles = StyleSheet.create({
     display: "flex",
     marginBottom: 10
   },
-  avatar:{
-    width: 70,
-    height: 70,
-    borderRadius: 10
-  },
   padding:{
-    paddingTop: 10,
-    paddingLeft: 10, 
-    paddingRight: 10
+    padding: 10, 
 
   },
   flexBoxColumn:{
     flexDirection: "column",
+
+    flexGrow: 1,
+    flexShrink: 1,
   },
   flexBoxRow:{
     flexDirection: "row",
   }, 
-  flexJustifyContentEvenly:{
-    justifyContent: "space-evenly"
-  },
-  languageBox:{
-    backgroundColor: theme.colors.primary, 
-    alignSelf: 'flex-start', 
-    borderRadius: 10,
-    borderWidth: 1, 
-    borderColor: theme.colors.white,
-    marginTop: 10,  
-  },
-  languageText:{ 
-    color: theme.colors.white,  
-    marginRight: 10,
-    marginLeft: 10,  
-  },
-  box:{
-    height: 46, 
-    borderRadius: 5,
-    borderWidth: 1, 
-    marginBottom: 5
-  }, 
-  buttonBox:{
-    backgroundColor: theme.colors.primary,  
-    borderColor: theme.colors.white,
-    justifyContent: 'center'
-  },
-  buttonText:{ 
-    color: theme.colors.white,  
-    marginRight: 10,
-    marginLeft: 10,  
-    alignSelf:'center', 
-  },
   number:{
     color: theme.colors.primary,
     fontSize: theme.fontSizes.heading ,

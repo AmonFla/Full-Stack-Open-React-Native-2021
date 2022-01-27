@@ -8,8 +8,8 @@ const RepositoryList = ()=>{
   const [orderBy, setOrderBy] = useState("CREATED_AT");
   const [orderDirection, setOrderDirection] = useState("DESC");
   const [filter, setFilter] = useState("");
-  const [filterDebounced] = useDebounce(filter,500);
-  const {repositories } = useRepositories({orderBy,orderDirection,filterDebounced}); 
+  const [searchKeyword] = useDebounce(filter,500);
+  const {repositories, fetchMore } = useRepositories({orderBy,orderDirection,searchKeyword, first: 4}); 
   const [option, setOption] = useState('default');
  
   
@@ -29,10 +29,14 @@ const RepositoryList = ()=>{
     }
 
   }, [option]) ;
+
+  const onEachReach = () => {
+    fetchMore();
+  };
   
   return (
     <View> 
-      <RepositoryListContainer repositories={repositories} setOption={setOption} option={option} setFilter={setFilter} />
+      <RepositoryListContainer repositories={repositories} setOption={setOption} option={option} setFilter={setFilter} onEachReach={onEachReach}/>
     </View>
   );
 };

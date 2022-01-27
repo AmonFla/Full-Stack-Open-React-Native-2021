@@ -11,7 +11,10 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Flexbox en ReactNative](https://reactnative.dev/docs/flexbox)
 * [YUP validation library](https://github.com/jquense/yup)
 * [How to use react context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
-* []()
+* [date-fns](https://date-fns.org/)
+* [use-debounce](https://www.npmjs.com/package/use-debounce)
+* [GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm)
+* [Pagination with Relative Cursors](https://shopify.engineering/pagination-relative-cursors)
 
 ## Componentes
 * [Componentes Principales y Componentes Native](https://reactnative.dev/docs/intro-react-native-components)
@@ -21,6 +24,10 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [ReactNativeRouter](https://v5.reactrouter.com/native/guides/quick-start)
 * [ScrollView](https://reactnative.dev/docs/scrollview)
 * [Formik](https://formik.org/) 
+* [Linking](https://docs.expo.dev/versions/latest/sdk/linking/)
+* [Picker](https://docs.expo.dev/versions/latest/sdk/picker/)
+* []()
+* []()
 
 ## Testing Jest
 * [Testing with jest](https://docs.expo.io/guides/testing-with-jest/) 
