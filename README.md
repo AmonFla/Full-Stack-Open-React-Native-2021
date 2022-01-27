@@ -15,6 +15,7 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [use-debounce](https://www.npmjs.com/package/use-debounce)
 * [GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm)
 * [Pagination with Relative Cursors](https://shopify.engineering/pagination-relative-cursors)
+* [Build App](https://docs.expo.io/distribution/building-standalone-apps/)
 
 ## Componentes
 * [Componentes Principales y Componentes Native](https://reactnative.dev/docs/intro-react-native-components)
@@ -26,8 +27,10 @@ Ejercicios de la sección React Native  del curso de https://fullstackopen.com
 * [Formik](https://formik.org/) 
 * [Linking](https://docs.expo.dev/versions/latest/sdk/linking/)
 * [Picker](https://docs.expo.dev/versions/latest/sdk/picker/)
-* []()
-* []()
+* [React Native Paper](https://callstack.github.io/react-native-paper/)
+* [Styled-components](https://styled-components.com/)
+* [React-spring - animations](https://www.react-spring.io/)
++ [React Navigation](https://reactnavigation.org/)
 
 ## Testing Jest
 * [Testing with jest](https://docs.expo.io/guides/testing-with-jest/) 
