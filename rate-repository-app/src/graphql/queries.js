@@ -74,6 +74,7 @@ query getCurrentUser($includeReviews: Boolean = false, $first: Int, $after: Stri
           createdAt
           repository {
             fullName
+            id
           }
           text
           rating

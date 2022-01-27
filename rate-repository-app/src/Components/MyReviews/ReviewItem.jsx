@@ -1,9 +1,11 @@
 import React from "react";
-import { StyleSheet,  View} from "react-native";
+import { StyleSheet, View, Pressable, Alert} from "react-native";
+import {  Link } from "react-router-native"; 
+
 import { format } from 'date-fns';
 
 import Text from "../Extra/Text";
-import theme from "../../thene"; 
+import theme from "../../thene";  
 
 const styles = StyleSheet.create({
   container:{
@@ -37,11 +39,48 @@ const styles = StyleSheet.create({
     borderColor:theme.colors.primary,
     borderWidth: 2,
     justifyContent: 'center'
+  },
+  box:{
+    height: 46, 
+    borderRadius: 5,
+    borderWidth: 1, 
+    marginBottom: 5
+  }, 
+  buttonBox:{ 
+    borderColor: theme.colors.white,
+    justifyContent: 'center'
+  },
+  buttonText:{ 
+    color: theme.colors.white,  
+    marginRight: 10,
+    marginLeft: 10,  
+    alignSelf:'center', 
+  },
+  bkgPrimary:{
+    backgroundColor: theme.colors.primary
+  },
+  bkgRed:{
+    backgroundColor: theme.colors.errorRed
   }
 });  
 
-const ReviewItem = ({ review }) => { 
+const ReviewItem = ({ review,deleteReview}) => { 
   const date = new Date(review.createdAt);
+
+  const createTwoButtonAlert = () =>
+    Alert.alert(
+      "Delete Review",
+      "Are you sure you want to delete this review?",
+      [
+        {
+          text: "Cancel", 
+          style: "cancel"
+        },
+        { text: "Delete", onPress: () => deleteReview(review.id) }
+        //doDelete(review.rating.id)
+      ]
+    );
+  
   return(
     <View style={styles.container} > 
       <View style={styles.padding}> 
@@ -69,7 +108,28 @@ const ReviewItem = ({ review }) => {
               fontSize="subheading" > 
               {review.text}
             </Text>
-          </View>      
+
+            <View>
+              <View style={[styles.padding, styles.flexBoxRow]}>
+                <Link to={`/viewrepo/${review.repository.id}`}>
+                  <View style={[styles.box, styles.buttonBox, styles.bkgPrimary]}>
+                    <Text   
+                      style={styles.buttonText}
+                      fontWeight="bold" 
+                      fontSize="subheading"  >View Repository</Text>  
+                  </View> 
+                </Link> 
+                <Pressable onPress={createTwoButtonAlert}>
+                  <View style={[styles.box, styles.buttonBox, styles.bkgRed]}>
+                    <Text   
+                      style={styles.buttonText}
+                      fontWeight="bold" 
+                      fontSize="subheading"  >Delete Review</Text>  
+                  </View> 
+                </Pressable>
+              </View> 
+            </View>  
+          </View>    
         </View>       
       </View> 
     </View>
