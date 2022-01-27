@@ -27,6 +27,7 @@ const AppBar = ()=>{
         {me? 
           <>
             <AppBarItem title="Create a review" link="/reviewadd" />
+            <AppBarItem title="My reviews" link="/myreviews" />
             <AppBarItem title="Sign Out" link="/signout" />
           </> 
           :<>

@@ -39,6 +39,11 @@ const createApolloClient = (authStorage) => {
           reviews: relayStylePagination(),     
         },   
       },
+      User: {      
+        fields: {        
+          reviews: relayStylePagination(),     
+        },   
+      },
     },
   });
 

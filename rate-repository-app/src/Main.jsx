@@ -11,6 +11,7 @@ import SignOut from "./Components/SignOut";
 import RepositoryView from "./Components/RepositoryView";
 import ReviewAdd from "./Components/ReviewAdd";
 import SignUp from "./Components/SignUp";
+import MyReviews from "./Components/MyReviews";
 
 const styles = StyleSheet.create({
   container: {
@@ -31,6 +32,7 @@ const Main = () => {
         <Route path="/viewrepo/:id" element={<RepositoryView />} exact />  
         <Route path="/reviewadd" element={<ReviewAdd />} exact />  
         <Route path="/signup" element={<SignUp />} exact />   
+        <Route path="/myreviews" element={<MyReviews />} exact />   
         <Route path="*" element={<Navigate to="/" replace />} />  
       </Routes>   
     </View>
